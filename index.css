@@ -16,13 +16,14 @@ input{
     height: 42px;
     width: 75px;
     border-radius: 8px;
-    padding: 1px 5px;
+    border: 1px solid gray;
 }
 
 select{
     grid-column: 2;
     border-radius: 8px;
     padding-left: 0.5em;
+    border: 1px solid gray;
 }
 
 button{
@@ -33,7 +34,8 @@ button{
     border-radius: 8px;
     border: 1px solid gray;
     background-color: #F3F0F0;
-    margin: 0.5em 0;   
+    margin: 0.5em 0; 
+    text-align: center;  
 }
 button:hover,
 button:active,
@@ -48,7 +50,7 @@ input:hover{
 /* color section */
 
 .color{
-    /* border: 1px solid blue; */
+   
     height: 15vh;
     margin: 0;
     display:flex;
@@ -57,9 +59,12 @@ input:hover{
     justify-content: end;
 }
 .color-hex{
-    margin: 0 0.25em 0.25em 0;
-    text-align: right;  
-    padding: 0 5px;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-top: auto;
+    text-align: right;
+
+    padding: 0 0.25em;
     border-radius: 5px;
     font-weight: 500;
     font-size: 1.125rem;
@@ -73,7 +78,8 @@ input:hover{
 }
 .color-name{
     font-size: 0.75rem;
-    margin: 0 0.5em 0.5em 0; 
+    margin-left: auto;
+    margin-top: 0.25em;
     opacity: 0.5;
     padding-right: 5px;
     text-align: right;
@@ -97,6 +103,8 @@ footer{
         display: flex;
         margin-left: 2em;
         gap: 1em;
+        margin-top: 3em;
+        align-items: center;
     }
     
     select{
@@ -116,6 +124,7 @@ footer{
     .color-container{
     display: flex;
     height: 85vh;
+    margin-top: 2em;
    
     }
     .color{
@@ -127,7 +136,10 @@ footer{
     
     .color-hex{
     font-size: 1.5rem;
-    margin: 0 0 0.25em 0;
+    margin-top: auto;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     padding: 0 10px;
     border-radius: 5px;
