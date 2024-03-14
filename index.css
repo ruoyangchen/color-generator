@@ -1,0 +1,140 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    font-family: "Inter", sans-serif;
+}
+
+/* header section */
+.generator-header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 0.5em;
+    margin: 2em 1em 1em 1em ;
+}
+input{
+    height: 42px;
+    width: 75px;
+    border-radius: 8px;
+    padding: 1px 5px;
+}
+
+select{
+    grid-column: 2;
+    border-radius: 8px;
+    padding-left: 0.5em;
+}
+
+button{
+    grid-column: 1 / -1;
+    height: 3em;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: #F3F0F0;
+    margin: 0.5em 0;   
+}
+button:hover,
+button:active,
+select:active,
+select:hover,
+input:active,
+input:hover{
+    cursor: pointer;
+   border: 2px solid black;
+    }
+
+/* color section */
+
+.color{
+    /* border: 1px solid blue; */
+    height: 15vh;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+.color-hex{
+    margin: 0 0.25em 0.25em 0;
+    text-align: right;  
+    padding: 0 5px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+.color-hex:hover,
+.color-hex:active{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.25);
+    
+    
+}
+.color-name{
+    font-size: 0.75rem;
+    margin: 0 0.5em 0.5em 0; 
+    opacity: 0.5;
+    padding-right: 5px;
+    text-align: right;
+}
+
+
+/* footer section */
+footer{
+    text-align: center;
+    margin-top: 0;
+    margin: auto;
+    font-size: 12px;
+    color: #7C7C7C;
+    font-weight: 200;
+}
+
+/* responsive design */
+@media(min-width: 600px){
+    
+    .generator-header{
+        display: flex;
+        margin-left: 2em;
+        gap: 1em;
+    }
+    
+    select{
+        width: 300px;
+        font-size: 1.125rem;   
+    }
+    
+    button{
+    width: 200px;
+    font-size: 1.125rem;
+    margin: 0;
+    }
+
+    input, select, button{
+    height: 50px;
+    }
+    .color-container{
+    display: flex;
+    height: 85vh;
+   
+    }
+    .color{
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 20%;
+    align-items: center;
+    }
+    
+    .color-hex{
+    font-size: 1.5rem;
+    margin: 0 0 0.25em 0;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    }
+
+    .color-name{
+    margin: 0 0 2em 0;
+    text-align: center;
+    }
+}
