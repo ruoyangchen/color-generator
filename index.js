@@ -16,7 +16,7 @@ document.addEventListener("click", function(e){
 
 function getColorScheme(){
     const colorSeedHex = colorPicker.value
-    const colorScheme = colorSchemeSelect.value
+    const colorScheme = colorSchemeSelect.value.toLowerCase()
     const colorSeedClean = colorSeedHex.substring(1)
     
     //GET colors array from color API
