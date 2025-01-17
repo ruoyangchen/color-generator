@@ -7,36 +7,78 @@ html, body {
 
 /* header section */
 .generator-header{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 2em 1em 1em 1em ;
 }
-input{
-    height: 42px;
-    width: 75px;
-    border-radius: 8px;
-    border: 1px solid gray;
+.logo{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2em;
 }
+
+
+.input-dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+input{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 0.3em;
+    flex-shrink: 0
+
+ 
+}
+
+input::-webkit-color-swatch-wrapper {
+    padding: 0; /* Remove default padding */
+  }
+
+input::-webkit-color-swatch {
+    border-radius: 50%; /* Make the swatch a circle */
+    border: none; /* Remove default border */
+  }
 
 select{
-    grid-column: 2;
-    border-radius: 8px;
-    padding-left: 0.5em;
-    border: 1px solid gray;
+    width: 100%;
+    height: 3em;
+    border-radius: 3em;
+    padding-left: 1em;
+    border: 1px solid black;
+    appearance: none; /* Remove browser-specific styles */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    background-size: 1em;
+    background-image: url("assets/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 1em center; /* Position the arrow on the right side */
+    background-size: 1.2em; /* Adjust the size of the arrow */
+    
+    font-size: 1rem;
 }
 
+
+
 button{
-    grid-column: 1 / -1;
+    width: 100%;
     height: 3em;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 600;
-    border-radius: 8px;
-    border: 1px solid gray;
+    border-radius: 3em;
+    border: 1px solid black;
     background-color: #F3F0F0;
-    margin: 0.5em 0; 
     text-align: center;  
 }
+
 button:hover,
 button:active,
 select:active,
@@ -103,24 +145,36 @@ footer{
 
 /* responsive design */
 @media(min-width: 600px){
-    
-    .generator-header{
-        display: flex;
-        margin-left: 2em;
-        gap: 1em;
-        margin-top: 3em;
-        align-items: center;
+    .logo{
+        width: auto;
+        display: inline-block;
+
+        margin: 0;
     }
+    .generator-header{
+        flex-direction: row;
+        margin: 0 2em;
+
+        align-items: center;
+        justify-content: center;
+    }
+
     
+    .input-dropdown{
+        justify-content: center;
+
+        margin: 0;
+    }
+
     select{
         width: 300px;
         font-size: 1.125rem;   
     }
     
     button{
-    width: 200px;
-    font-size: 1.125rem;
+    width: 20em;
     margin: 0;
+
     }
 
     input, select, button{
