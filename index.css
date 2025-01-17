@@ -34,9 +34,7 @@ input{
     border-radius: 50%;
     border: 1px solid black;
     padding: 0.3em;
-    flex-shrink: 0
-
- 
+    flex-shrink: 0;
 }
 
 input::-webkit-color-swatch-wrapper {
@@ -154,15 +152,17 @@ footer{
     .generator-header{
         flex-direction: row;
         margin: 0 2em;
+        gap: 1em;
 
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
+
 
     
     .input-dropdown{
-        justify-content: center;
-
+        width: 400px;
+        justify-content: auto;
         margin: 0;
     }
 
@@ -172,7 +172,7 @@ footer{
     }
     
     button{
-    width: 20em;
+    max-width: 300px;
     margin: 0;
 
     }
