@@ -25,6 +25,8 @@ function getColorScheme(){
         .then(data => {
             const colorArray = data.colors
             const colorContainer = document.getElementById("color-container")
+            colorContainer.innerHTML = ""
+            
             let colorHtml = ""
             for(let color of colorArray){
                 
