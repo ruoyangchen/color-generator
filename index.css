@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 10px;
     padding: 0;
     background-color: #F3F2F2;
@@ -6,20 +7,22 @@ html, body {
 }
 
 /* header section */
-.generator-header{
+.generator-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2em 1em 1em 1em ;
+    margin: 2em 1em 1em 1em;
 }
-.logo{
+
+.logo {
     width: 100%;
     height: 50px;
     margin-bottom: 2em;
 }
 
 
-.input-dropdown{
+
+.input-dropdown {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,8 +32,8 @@ html, body {
 }
 
 input{
-    height: 3em;
-    width: 3em;
+    height: 48px;
+    width: 48px;
     border-radius: 50%;
     border: 1px solid black;
     padding: 0.3em;
@@ -38,35 +41,43 @@ input{
 }
 
 input::-webkit-color-swatch-wrapper {
-    padding: 0; /* Remove default padding */
-  }
+    padding: 0;
+    /* Remove default padding */
+}
 
 input::-webkit-color-swatch {
-    border-radius: 50%; /* Make the swatch a circle */
-    border: none; /* Remove default border */
-  }
+    border-radius: 50%;
+    /* Make the swatch a circle */
+    border: none;
+    /* Remove default border */
+}
 
-select{
+select {
     width: 100%;
     height: 3em;
     border-radius: 3em;
     padding-left: 1em;
     border: 1px solid black;
-    appearance: none; /* Remove browser-specific styles */
-    -webkit-appearance: none; /* For Safari */
-    -moz-appearance: none; /* For Firefox */
+    appearance: none;
+    /* Remove browser-specific styles */
+    -webkit-appearance: none;
+    /* For Safari */
+    -moz-appearance: none;
+    /* For Firefox */
     background-size: 1em;
     background-image: url("assets/down-arrow.svg");
     background-repeat: no-repeat;
-    background-position: right 1em center; /* Position the arrow on the right side */
-    background-size: 1.2em; /* Adjust the size of the arrow */
-    
+    background-position: right 1em center;
+    /* Position the arrow on the right side */
+    background-size: 1.2em;
+    /* Adjust the size of the arrow */
+
     font-size: 1rem;
 }
 
 
 
-button{
+button {
     width: 100%;
     height: 3em;
     font-size: 1.25rem;
@@ -74,7 +85,7 @@ button{
     border-radius: 3em;
     border: 1px solid black;
     background-color: #F3F0F0;
-    text-align: center;  
+    text-align: center;
 }
 
 button:hover,
@@ -82,13 +93,13 @@ button:active,
 select:active,
 select:hover,
 input:active,
-input:hover{
+input:hover {
     cursor: pointer;
-   border: 2px solid black;
-    }
+    border: 2px solid black;
+}
 
 
-.intro-page{
+.intro-page {
     width: 100%;
     height: 80vh;
     display: flex;
@@ -98,7 +109,7 @@ input:hover{
 
 }
 
-.intro-page h3{
+.intro-page h3 {
     text-align: center;
     word-wrap: break-word;
     max-width: 300px;
@@ -107,12 +118,11 @@ input:hover{
 
 /* color section */
 
+.color {
 
-.color{
-   
     height: 15vh;
     margin: 0;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
@@ -120,7 +130,8 @@ input:hover{
     border-radius: 0 15vh 15vh 0;
 
 }
-.color-hex{
+
+.color-hex {
     margin-right: auto;
     margin-bottom: 0;
     margin-top: auto;
@@ -131,14 +142,16 @@ input:hover{
     font-weight: 500;
     font-size: 1.125rem;
 }
+
 .color-hex:hover,
-.color-hex:active{
+.color-hex:active {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.25);
-    
-    
+
+
 }
-.color-name{
+
+.color-name {
     font-size: 0.75rem;
     margin-right: auto;
     margin-top: 0.25em;
@@ -150,7 +163,7 @@ input:hover{
 
 
 /* footer section */
-footer{
+footer {
     text-align: center;
     margin-top: 0;
     margin: auto;
@@ -160,14 +173,15 @@ footer{
 }
 
 /* responsive design */
-@media(min-width: 600px){
-    .logo{
+@media(min-width: 600px) {
+    .logo {
         width: auto;
         display: inline-block;
 
         margin: 0;
     }
-    .generator-header{
+
+    .generator-header {
         flex-direction: row;
         margin: 0 2em;
         gap: 1em;
@@ -177,60 +191,64 @@ footer{
     }
 
 
-    
-    .input-dropdown{
+
+    .input-dropdown {
         width: 400px;
         justify-content: space-around;
         margin: 0;
     }
 
-    input{
+    input {
         flex-shrink: 0;
     }
 
-    select{
+    select {
         width: 300px;
-        font-size: 1.125rem;   
+        font-size: 1.125rem;
     }
-    
-    button{
-    max-width: 300px;
-    margin: 0;
+
+    button {
+        max-width: 300px;
+        margin: 0;
 
     }
 
-    input, select, button{
-    height: 50px;
-    }
-    .color-container{
-    display: flex;
-    height: 85vh;
-    margin-top: 2em;
-    margin: 2em;
-   
-    }
-    .color{
-    /* border: 1px solid blue; */
-    height: 100%;
-    width: 20%;
-    align-items: center;
-    border-radius: 20vw 20vw 0 0;
-   
-    }
-    
-    .color-hex{
-    font-size: 1.5rem;
-    margin-top: auto;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 0 10px;
-    border-radius: 5px;
+    input,
+    select,
+    button {
+        height: 50px;
     }
 
-    .color-name{
-    margin: 0 0 2em 0;
-    text-align: center;
+    .color-container {
+        display: flex;
+        height: 85vh;
+        margin-top: 2em;
+        margin: 2em;
+
+    }
+
+    .color {
+        /* border: 1px solid blue; */
+        height: 100%;
+        width: 20%;
+        align-items: center;
+        border-radius: 20vw 20vw 0 0;
+
+    }
+
+    .color-hex {
+        font-size: 1.5rem;
+        margin-top: auto;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 0 10px;
+        border-radius: 5px;
+    }
+
+    .color-name {
+        margin: 0 0 2em 0;
+        text-align: center;
     }
 }
